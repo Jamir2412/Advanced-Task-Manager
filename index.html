@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+
+
+<!-- Add Task Form -->
+<form id="task-form" class="task-form">
+  <input
+    type="text"
+    id="task-title"
+    placeholder="Enter task title..."
+    required
+  />
+
+  <select id="task-category">
+    <option value="Work">Work</option>
+    <option value="Study">Study</option>
+    <option value="Personal">Personal</option>
+  </select>
+
+  <select id="task-priority">
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+
+  <input type="date" id="task-date" />
+
+  <button type="submit">Add Task</button>
+</form>
+
+<!-- Search -->
+<div class="search-box">
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Search tasks..."
+  />
+</div>
+
+<!-- Filters -->
+<div class="filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="Work">Work</button>
+  <button class="filter-btn" data-filter="Study">Study</button>
+  <button class="filter-btn" data-filter="Personal">Personal</button>
+  <button class="filter-btn" data-filter="completed">Completed</button>
+</div>
+
+<!-- Task List -->
+<ul id="task-list" class="task-list"></ul>
+
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
