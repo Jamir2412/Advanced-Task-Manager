@@ -13,8 +13,8 @@ padding: 40px 20px;
 }
 
 .container {
+margin-top: 10px;
 width: 100%;
-max-width: 700px;
 background: white;
 padding: 25px;
 border-radius: 10px;
@@ -93,19 +93,28 @@ list-style: none;
 }
 
 .task-item {
-display: grid;
-grid-template-columns: auto 1fr auto auto auto auto;
-align-items: center;
-gap: 10px;
-padding: 10px;
+display: flex;
+justify-content: space-between;
 border-bottom: 1px solid #eee;
 }
-
+.task_sub_info{
+  margin: 5px;
+}
+.task_info{
+  display: flex;
+  justify-content: space-around;
+}
 .task-title {
 font-weight: 500;
 }
 
 .task-category {
+font-size: 12px;
+background: #eee;
+padding: 3px 8px;
+border-radius: 12px;
+}
+.task-date{
 font-size: 12px;
 background: #eee;
 padding: 3px 8px;
